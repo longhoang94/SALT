@@ -1,0 +1,74 @@
+body {
+    font-size: 14px;
+    color: white;
+}
+.fullContainer {
+    width: 100%;
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+}
+.logo {
+    margin: 30px 0px;
+}
+.title h1{
+    color: white;
+    line-height: 50pt;
+    font-size: 36pt;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.styleRow {
+    margin-bottom: 20px;
+}
+.styleInput input{
+    margin-top: 3em;
+    background: gray;
+    border-radius: 25px;
+    text-rendering: auto;
+    color: white;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    font: 400 13.3333px Arial;
+}
+.styleInput textarea{
+    margin-top: 3em;
+    background: gray;
+    border-radius: 25px;
+    color: white;
+}
+.styleInput button{
+    margin-top: 3em;
+    background: antiquewhite;
+    border-radius: 25px;
+    width: 9.5em;
+    color: black;
+    margin-bottom: 10em;
+}
+.styleNav ul {
+    list-style: none;
+}
+.styleNav ul li {
+    margin-bottom: 0.5em;
+}
+.styleNav ul li a {
+    display: block;
+    color: white;
+}
+.styleNav ul li a:hover{
+    color: darkgoldenrod;
+}
+.styleNav ul li>ul {
+    visibility: hidden;
+    position: absolute;
+    width: 160px;
+    margin-top: -20px;
+}
+.styleNav ul li:hover >ul{
+    visibility: visible;
+    margin-left: 5em;
+}
