@@ -128,7 +128,7 @@ nav {
 nav li {
     text-align: right;
 }
-nav a {
+nav .list-menu a {
     color: white;
     padding-right: 30px;
     padding-top: 8px;
@@ -137,7 +137,12 @@ nav a {
     display: block;
     text-decoration: none;
 }
+nav .list-menu .list-sub:hover .sub{
+    height: auto;
+    overflow: inherit;
+}
 nav .list-menu li .sub {
+    margin: 0;
     height: 0;
     overflow: hidden;
     transition: all 0.5s;
@@ -156,6 +161,17 @@ nav .list-menu a:after {
     z-index: 1;
     transition: all 0.5s;
 }
-.list-menu li:hover > a {
+nav .list-menu .list-sub:hover > a{
     margin-right: 10px;
+}
+nav .list-menu a:hover:after {
+    width: 20px;
+}
+#sponsors-list {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.65);
 }
