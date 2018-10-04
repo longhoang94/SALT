@@ -101,10 +101,99 @@ header li {
     font-weight: bold;
 }
 
-.menu{
+.menu {
     height: auto;
 }
 
+body #content-section {
+    margin-top: 40px;
+}
+#content-section .left-col {
+    float: left;
+    width: 100%;
+    max-width: 80%;
+}
+#content-section .info-section {
+    line-height: 55px;
+    font-size: 32pt;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.info-section .store {
+    margin-top: 10px;
+}
+.info-section .store a{
+    background-color: white;
+    color: black;
+    padding: 10px 30px;
+    opacity: 1;
+    font-size: 16px;
+    text-decoration: none;
+}
+.info-section .store a:hover {
+    background-color: orange;
+    color: white;
+}
+.info-section .store a i {
+    margin-left: 5px;
+}
+#content-section .right_col {
+    float: right;
+}
+nav {
+    float: right;
+}
+nav li {
+    text-align: right;
+}
+nav .list-menu a {
+    color: white;
+    padding-right: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    position: relative;
+    display: block;
+    text-decoration: none;
+}
+nav .list-menu .list-sub:hover .sub{
+    height: auto;
+    overflow: inherit;
+}
+nav .list-menu li .sub {
+    margin: 0;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+nav li .sub a {
+    font-size: 12px;
+}
+nav .list-menu a:after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 1px;
+    background-color: white;
+    right: 0;
+    top: 50%;
+    z-index: 1;
+    transition: all 0.5s;
+}
+nav .list-menu .list-sub:hover > a{
+    margin-right: 10px;
+}
+nav .list-menu a:hover:after {
+    width: 20px;
+}
+#sponsors-list {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.65);
+}
 
 
 
