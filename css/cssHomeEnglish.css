@@ -1,0 +1,177 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+}
+body {
+    position: relative;
+    min-height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    color: #DEDEDE;
+    font-size: 16px;
+}
+body #msf {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+body .msf2018 {
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    background-color: black;
+}
+.container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 90%;
+    padding: 68px 0;
+}
+header {
+    overflow: hidden;
+}
+header .logo {
+    float: left;
+    width: 100%;
+    max-width: 500px;
+}
+header .logo img {
+    max-width: initial;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+header .slt-language {
+    float: right;
+    margin-left: 10px;
+    margin-top: -1px;
+}
+header .language a {
+    list-style-type: none;
+    text-decoration: none;
+}
+header .language li {
+    display: inline-block;
+    position: relative;
+}
+header .slt-language a {
+    text-decoration: none;
+    opacity: 0.8;
+    color: white;
+}
+.language .actived-language {
+    color: orange;
+    font-weight: bold;
+    font-size: 19px;
+    opacity: 1;
+}
+header .language li a.actived-language:before {
+    content: '/';
+    color: white;
+    margin-left: 5px;
+}
+header .slt-language .nav-button {
+    display: block;
+    overflow: hidden;
+    clear: both;
+    float: right;
+    max-width: 30px;
+    font-size: 25px;
+    opacity: 1;
+}
+
+/*Body*/
+body #content-section {
+    margin-top: 40px;
+}
+#content-section .left-col {
+    float: left;
+    width: 100%;
+    max-width: 80%;
+}
+#content-section .info-section {
+    line-height: 55px;
+    font-size: 32pt;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.info-section .store {
+    margin-top: 10px;
+}
+.info-section .store a{
+    background-color: white;
+    color: black;
+    padding: 10px 30px;
+    opacity: 1;
+    font-size: 16px;
+    text-decoration: none;
+}
+.info-section .store a:hover {
+    background-color: orange;
+    color: white;
+}
+.info-section .store a i {
+    margin-left: 5px;
+}
+#content-section .right_col {
+    float: right;
+}
+nav {
+    float: right;
+}
+nav li {
+    text-align: right;
+}
+nav .list-menu a {
+    color: white;
+    padding-right: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    position: relative;
+    display: block;
+    text-decoration: none;
+}
+nav .list-menu .list-sub:hover .sub{
+    height: auto;
+    overflow: inherit;
+}
+nav .list-menu li .sub {
+    margin: 0;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+nav li .sub a {
+    font-size: 12px;
+}
+nav .list-menu a:after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 1px;
+    background-color: white;
+    right: 0;
+    top: 50%;
+    z-index: 1;
+    transition: all 0.5s;
+}
+nav .list-menu .list-sub:hover > a{
+    margin-right: 10px;
+}
+nav .list-menu a:hover:after {
+    width: 20px;
+}
+#sponsors-list {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.65);
+}
