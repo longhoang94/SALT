@@ -7,6 +7,21 @@ div {
     display: block;
 }
 
+#main_section h1 {
+    line-height: 50pt;
+    margin-bottom: 30px;
+    font-size: 45pt;
+}
+
+h1 {
+    display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
 html {
     height: 100%;
 }
@@ -31,10 +46,6 @@ ul {
     list-style-type: none;
 }
 
-main_section {
-    width: 100%;
-}
-
 .left_col {
     float: left;
     width: 85%;
@@ -55,7 +66,7 @@ main_section {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    min-height: 1000px;
+    min-height: 1200px;
     height: 100%;
     width: 100%;
     position: absolute;
