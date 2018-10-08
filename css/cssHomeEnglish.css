@@ -1,20 +1,11 @@
 * {
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
-div {
-    display: block;
-}
-
 html {
     height: 100%;
 }
-
-header {
-    overflow: hidden;
-}
-
 body {
     position: relative;
     min-height: 100%;
@@ -22,89 +13,79 @@ body {
     color: #DEDEDE;
     font-size: 16px;
 }
-
-a {
-    color: white;
-}
-
-ul {
-    list-style-type: none;
-}
-
-body .full-page {
-    background-image: url("../images/background.jpg");
-    background-repeat: no-repeat;
+body #msf {
+    position: absolute;
+    height: 100%;
     width: 100%;
 }
-
+body .msf2018 {
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+    background-color: black;
+}
 .container {
     width: 100%;
     margin: 0 auto;
     max-width: 90%;
-    padding: 35px 0;
+    padding: 68px 0;
 }
-
-.none-active {
-    font-size: 14px;
-    font-weight: bold;
+header {
+    overflow: hidden;
 }
-
-.slt-language {
-    float: right;
-    margin-right: 20px;
-    margin-top: 10px;
-}
-
-.fa-align-justify {
-    margin-top: -7px;
-    float: right;
-    font-size: 25px;
-}
-
 header .logo {
     float: left;
+    width: 100%;
+    max-width: 500px;
 }
-
-header .slt-language .actived-language {
+header .logo img {
+    max-width: initial;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+header .slt-language {
+    float: right;
+    margin-left: 10px;
+    margin-top: -1px;
+}
+header .language a {
+    list-style-type: none;
     text-decoration: none;
-    font-size: 19px;
-    font-weight: bold;
-    opacity: 1;
-    color: #fc8804;
 }
-
-header li {
+header .language li {
     display: inline-block;
     position: relative;
 }
-
-.row h1 {
-    line-height: 40px;
-    font-size: 36px;
-    margin-left: 10px;
+header .slt-language a {
+    text-decoration: none;
+    opacity: 0.8;
+    color: white;
 }
-
-#filter_section {
+.language .actived-language {
+    color: orange;
     font-weight: bold;
+    font-size: 19px;
+    opacity: 1;
 }
-
-.row {
-    padding: 40px 0;
-    margin-bottom: -25px;
+header .language li a.actived-language:before {
+    content: '/';
+    color: white;
+    margin-left: 5px;
 }
-
-#tab {
-    font-size: 30px;
-    color: #F89521;
+header .slt-language .nav-button {
     display: block;
-    padding: 15px 0px;
-    font-weight: bold;
+    overflow: hidden;
+    clear: both;
+    float: right;
+    max-width: 30px;
+    font-size: 25px;
+    opacity: 1;
 }
 
-.menu {
-    height: auto;
-}
-
+/*Body*/
 body #content-section {
     margin-top: 40px;
 }
@@ -194,6 +175,3 @@ nav .list-menu a:hover:after {
     width: 100%;
     background-color: rgba(255, 255, 255, 0.65);
 }
-
-
-
