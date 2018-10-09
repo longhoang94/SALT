@@ -80,6 +80,7 @@ header li {
 
 .row h1 {
     line-height: 40px;
+    font-weight: bold;
     font-size: 36px;
     margin-left: 10px;
 }
@@ -150,7 +151,7 @@ nav li {
 nav .list-menu a {
     color: white;
     padding-right: 30px;
-    padding-top: 8px;
+    padding-top: 2px;
     padding-bottom: 8px;
     position: relative;
     display: block;
@@ -195,5 +196,26 @@ nav .list-menu a:hover:after {
     background-color: rgba(255, 255, 255, 0.65);
 }
 
+.shop_section .lstTickets > li {
+    padding: 15px 0px;
+}
 
+.shop_section .lstTickets > li {
+    width: 32%;
+}
 
+.shop_section .lstTickets > li {
+    background-color: #616264;
+    text-align: center;
+    position: relative;
+    border: 12px solid #231F20;
+}
+
+#name {
+    text-align: center;
+}
+
+#tab {
+    border-right: 5px;
+    font-size: 30px;
+}
