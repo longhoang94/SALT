@@ -1,0 +1,6 @@
+@media (max-width:1024px) {
+    header img {
+        max-width: 330px;
+    }
+}
+

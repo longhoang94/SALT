@@ -6,6 +6,15 @@
 html {
     height: 100%;
 }
+ul li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    opacity: 0.8;
+}
 body {
     position: relative;
     min-height: 100%;
@@ -29,6 +38,8 @@ body .msf2018 {
     width: 100%;
     margin: 0 auto;
     max-width: 90%;
+}
+.ctn {
     padding: 68px 0;
 }
 header {
@@ -40,7 +51,7 @@ header .logo {
     max-width: 500px;
 }
 header .logo img {
-    max-width: initial;
+    max-width: 330px;
 }
 img {
     max-width: 100%;
@@ -88,6 +99,7 @@ header .slt-language .nav-button {
 /*Body*/
 body #content-section {
     margin-top: 40px;
+    overflow: hidden;
 }
 #content-section .left-col {
     float: left;
@@ -158,7 +170,6 @@ nav .list-menu a:after {
     background-color: white;
     right: 0;
     top: 50%;
-    z-index: 1;
     transition: all 0.5s;
 }
 nav .list-menu .list-sub:hover > a{
@@ -175,3 +186,76 @@ nav .list-menu a:hover:after {
     width: 100%;
     background-color: rgba(255, 255, 255, 0.65);
 }
+.left-sponsors {
+    position: relative;
+    width: 40%;
+    float: left;
+}
+.left-sponsors:after {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background: gray;
+}
+.main-sponsors {
+    display: flex;
+}
+.main-sponsors li {
+    text-align: center;
+}
+.main-sponsors .title {
+    font-size: 10px;
+    display: block;
+    color: black;
+}
+.wrap-img {
+    display: flex;
+    margin-top: 0px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    line-height: 0;
+}
+.main-sponsors img {
+    max-width: 80%;
+}
+img {
+    height: auto;
+}
+#sponsors-list .container {
+    padding: 10px 0 0px 0;
+}
+.right-sponsors {
+    width: 60%;
+    padding-left: 20px;
+    position: relative;
+    float: right;
+}
+.mainsub-sponsors {
+    position: relative;
+    overflow: scroll;
+}
+.stage {
+    width: 2121px;
+}
+.mainsub-sponsors li {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+}
+.mainsub-sponsors img {
+    max-width: 100px;
+}
+.item {
+    width: 138.2px;
+    margin-right: 10px;
+    float: left;
+}
+
