@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+div {
+    display: block;
+}
+
+#main_section h1 {
+    line-height: 50pt;
+    margin-bottom: 30px;
+    font-size: 45pt;
+}
+
+h1 {
+    display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+html {
+    height: 100%;
+}
+
+header {
+    overflow: hidden;
+}
+
+body {
+    position: relative;
+    min-height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    color: #DEDEDE;
+    font-size: 16px;
+}
+
+a {
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.left_col {
+    float: left;
+    width: 85%;
+    margin-left: auto;
+    margin-top: 10px;
+
+}
+.right_col {
+    text-align: center;
+    float: right;
+    width: 15%;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.full-page {
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 1500px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 90%;
+    padding: 35px 0;
+}
+
+.none-active {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.slt-language {
+    float: right;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+header .logo {
+    float: left;
+}
+
+header .slt-language .actived-language {
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: bold;
+    opacity: 1;
+    color: #fc8804;
+}
+
+header li {
+    display: inline-block;
+    position: relative;
+}
+
+.styleNav ul {
+    list-style: none;
+}
+.styleNav ul li {
+    margin-bottom: 0.5em;
+}
+.styleNav ul li a {
+    display: block;
+    color: white;
+}
+.styleNav ul li a:hover{
+    color: darkgoldenrod;
+}
+.styleNav ul li>ul {
+    visibility: hidden;
+    position: absolute;
+    width: 160px;
+    margin-top: -20px;
+}
+.styleNav ul li:hover >ul{
+    visibility: visible;
+    margin-left: 5em;
+}

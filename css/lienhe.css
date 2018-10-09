@@ -4,12 +4,10 @@ body {
 }
 .fullContainer {
     width: 100%;
-    height: 100%-size: 100%;
     background-attachment: fixed;
     background-image: url("../images/background.jpg");
     background-repeat: no-repeat;
-    min-height: 100%;;
-    background
+    background-size: 100%;
 }
 .logo {
     margin: 30px 0px;
@@ -24,7 +22,7 @@ body {
 .styleRow {
     margin-bottom: 20px;
 }
-.styleInput input{
+.styleInput input {
     margin-top: 3em;
     background: gray;
     border-radius: 25px;
@@ -38,12 +36,15 @@ body {
     display: inline-block;
     text-align: start;
     font: 400 13.3333px Arial;
+
+
 }
 .styleInput textarea{
     margin-top: 3em;
     background: gray;
     border-radius: 25px;
     color: white;
+
 }
 .styleInput button{
     margin-top: 3em;
@@ -53,26 +54,72 @@ body {
     color: black;
     margin-bottom: 10em;
 }
-.styleNav ul {
-    list-style: none;
-}
-.styleNav ul li {
-    margin-bottom: 0.5em;
-}
-.styleNav ul li a {
-    display: block;
+/*.styleNav ul {*/
+    /*list-style: none;*/
+/*}*/
+/*.styleNav ul li {*/
+    /*margin-bottom: 0.5em;*/
+/*}*/
+/*.styleNav ul li a {*/
+    /*display: block;*/
+    /*color: white;*/
+/*}*/
+/*.styleNav ul li a:hover{*/
+    /*color: darkgoldenrod;*/
+/*}*/
+/*.styleNav ul li>ul {*/
+    /*visibility: hidden;*/
+    /*position: absolute;*/
+    /*width: 160px;*/
+    /*margin-top: -20px;*/
+/*}*/
+/*.styleNav ul li:hover >ul{*/
+    /*visibility: visible;*/
+    /*margin-left: 5em;*/
+/*}*/
+/*!*.styleInput input:focus {*!*/
+
+/*}*/
+nav .list-menu a {
     color: white;
+    padding-right: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    position: relative;
+    display: block;
+    text-decoration: none;
 }
-.styleNav ul li a:hover{
-    color: darkgoldenrod;
+nav .list-menu .list-sub:hover .sub{
+    height: auto;
+    overflow: inherit;
 }
-.styleNav ul li>ul {
-    visibility: hidden;
+nav .list-menu li .sub {
+    margin: 0;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+nav li .sub a {
+    font-size: 12px;
+}
+nav .list-menu a:after {
+    content: '';
     position: absolute;
-    width: 160px;
-    margin-top: -20px;
+    width: 10px;
+    height: 1px;
+    background-color: white;
+    right: 0;
+    top: 50%;
+    z-index: 1;
+    transition: all 0.5s;
 }
-.styleNav ul li:hover >ul{
-    visibility: visible;
-    margin-left: 5em;
+nav .list-menu .list-sub:hover > a{
+    margin-right: 10px;
 }
+nav .list-menu a:hover:after {
+    width: 20px;
+}
+nav .list-menu li {
+    list-style-type: none;
+}
+
