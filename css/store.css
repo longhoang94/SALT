@@ -80,6 +80,7 @@ header li {
 
 .row h1 {
     line-height: 40px;
+    font-weight: bold;
     font-size: 36px;
     margin-left: 10px;
 }
